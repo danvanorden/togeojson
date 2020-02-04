@@ -79,7 +79,7 @@ var toGeoJSON = (function() {
         };
     }
 
-    var serializer = serializer = new (require('xmldom').XMLSerializer)();
+    var serializer = new (require('xmldom').XMLSerializer)();
     function xml2str(str) {
         // IE9 will create a new XMLSerializer but it'll crash immediately.
         // This line is ignored because we don't run coverage tests in IE9
